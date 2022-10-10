@@ -1,0 +1,58 @@
+.game-board {
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+
+.image__tunnel {
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: tunnel-animation 2s infinite linear;
+}
+
+.image__mario {
+    width: 150px;
+    position: absolute;
+    bottom: 0; 
+}
+
+.jump--animation {
+    animation: jump-animation 500ms ease-out;
+}
+
+
+@keyframes tunnel-animation {
+    from {
+        right: -80px;
+    }
+
+    to {
+        right: 100%;
+    }
+}
+
+@keyframes jump-animation {
+    0% {
+        bottom: 0;
+    }
+
+    40% {
+        bottom: 180px;
+    }
+
+    50% {
+        bottom: 180px;
+    }
+
+    60% {
+        bottom: 180px;
+    }
+
+    100% {
+        bottom: 0;
+    }
+}
